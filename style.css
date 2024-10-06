@@ -1,0 +1,172 @@
+.red{
+    border: 1px solid red;
+}
+
+.head_bar{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.head_bar img{
+    width: 100px;
+}
+.head_bar .head_infor{
+    display: flex;
+    align-items: center; 
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.head_bar .nav a{
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(210, 37, 37);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+.head_bar .nav a:hover{
+    color: rgb(59, 142, 113);
+    text-decoration: underline;
+}
+ 
+.head_title{
+    align-items: center;
+    text-align: center;
+    justify-content: space-between; 
+
+}
+.head_title p small{
+    color: rgb(147, 147, 147);
+}
+.head_div{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+
+.main_divs {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.projects_div, .work_experience, .education {
+    flex: 1; 
+    padding: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.projects_div div {
+    display: block;
+    margin-bottom: 10px;
+    
+}
+
+.work_experience .job {
+    margin-bottom: 20px;
+}
+
+.work_experience h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.work_experience a {
+    color: blue;
+    text-decoration: none;
+}
+
+.education h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education ul li {
+    margin-bottom: 5px;
+}
+
+.foot_div{
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+
+}
+.foot_div .review{
+    display: flex;
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.foot_div .review div{
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px;
+
+}
+.foot_div .review div p small{
+    color: rgb(92, 92, 92);
+}
+
+footer .copyright{
+    text-align: center;
+    user-select: none;
+}
+
+header{
+    user-select: none;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .head_bar {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .head_bar img {
+        margin-bottom: 10px; 
+    }
+
+    .head_infor {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .nav a {
+        margin: 10px 0; 
+    }
+
+    .head_title {
+        margin-top: 20px;
+    }
+    .main_divs {
+        flex-direction: column;
+    }
+    .foot_div .review{
+        flex-direction: column;
+    }
+
+}
